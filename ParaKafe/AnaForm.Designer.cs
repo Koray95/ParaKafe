@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmiUrunler = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiGecmisSiparisler = new System.Windows.Forms.ToolStripMenuItem();
             this.lvwMasalar = new System.Windows.Forms.ListView();
+            this.imlMasalar = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,11 +66,19 @@
             // 
             this.lvwMasalar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvwMasalar.HideSelection = false;
+            this.lvwMasalar.LargeImageList = this.imlMasalar;
             this.lvwMasalar.Location = new System.Drawing.Point(0, 28);
             this.lvwMasalar.Name = "lvwMasalar";
             this.lvwMasalar.Size = new System.Drawing.Size(800, 422);
             this.lvwMasalar.TabIndex = 1;
             this.lvwMasalar.UseCompatibleStateImageBehavior = false;
+            // 
+            // imlMasalar
+            // 
+            this.imlMasalar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imlMasalar.ImageStream")));
+            this.imlMasalar.TransparentColor = System.Drawing.Color.Transparent;
+            this.imlMasalar.Images.SetKeyName(0, "dolu");
+            this.imlMasalar.Images.SetKeyName(1, "bos");
             // 
             // AnaForm
             // 
@@ -92,5 +103,6 @@
         private System.Windows.Forms.ListView lvwMasalar;
         private System.Windows.Forms.ToolStripMenuItem tsmiUrunler;
         private System.Windows.Forms.ToolStripMenuItem tsmiGecmisSiparisler;
+        private System.Windows.Forms.ImageList imlMasalar;
     }
 }

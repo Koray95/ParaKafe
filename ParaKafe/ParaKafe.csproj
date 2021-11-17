@@ -106,5 +106,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParaCafe.Data\ParaCafe.Data.csproj">
+      <Project>{f752957b-7a97-493b-b805-775c4554351e}</Project>
+      <Name>ParaCafe.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
