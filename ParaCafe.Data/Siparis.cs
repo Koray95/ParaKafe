@@ -15,7 +15,7 @@ namespace ParaCafe.Data
         public DateTime? KapanisZamani { get; set; }
         public List<SiparisDetay> SiparisDetaylar { get; set; } = new List<SiparisDetay>(); // default değer
         public string ToplamTutarTl { get { return $"{ToplamTutar():n2}₺"; } }
-        decimal ToplamTutar()
+        public decimal ToplamTutar()
         {
             return SiparisDetaylar.Sum(x=>x.Tutar());
         }

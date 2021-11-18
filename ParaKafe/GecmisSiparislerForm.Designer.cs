@@ -63,11 +63,19 @@
             // 
             // dgvSiprarisler
             // 
+            this.dgvSiprarisler.AllowUserToAddRows = false;
+            this.dgvSiprarisler.AllowUserToDeleteRows = false;
+            this.dgvSiprarisler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvSiprarisler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvSiprarisler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSiprarisler.Location = new System.Drawing.Point(36, 48);
+            this.dgvSiprarisler.MultiSelect = false;
             this.dgvSiprarisler.Name = "dgvSiprarisler";
+            this.dgvSiprarisler.ReadOnly = true;
+            this.dgvSiprarisler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSiprarisler.Size = new System.Drawing.Size(710, 132);
             this.dgvSiprarisler.TabIndex = 1;
+            this.dgvSiprarisler.SelectionChanged += new System.EventHandler(this.dgvSiprarisler_SelectionChanged);
             // 
             // label1
             // 
@@ -81,9 +89,16 @@
             // 
             // dgvSiparisDetaylar
             // 
+            this.dgvSiparisDetaylar.AllowUserToAddRows = false;
+            this.dgvSiparisDetaylar.AllowUserToDeleteRows = false;
+            this.dgvSiparisDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvSiparisDetaylar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvSiparisDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSiparisDetaylar.Location = new System.Drawing.Point(37, 59);
+            this.dgvSiparisDetaylar.MultiSelect = false;
             this.dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
+            this.dgvSiparisDetaylar.ReadOnly = true;
+            this.dgvSiparisDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSiparisDetaylar.Size = new System.Drawing.Size(710, 132);
             this.dgvSiparisDetaylar.TabIndex = 2;
             // 
